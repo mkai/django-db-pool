@@ -229,6 +229,3 @@ else:
 
     class DatabaseWrapper(DatabaseWrapper14):
         pass
-else:
-    raise ImportError("Unsupported Django version %s" % django_version)
-
