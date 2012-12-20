@@ -222,7 +222,7 @@ django_version = get_django_version()
 if django_version.startswith('1.3'):
     class DatabaseWrapper(DatabaseWrapper13):
         pass
-elif django_version.startswith('1.4'):
+else:
     from django.conf import settings
     from django.db.backends.postgresql_psycopg2.base import utc_tzinfo_factory
     import psycopg2.extensions
